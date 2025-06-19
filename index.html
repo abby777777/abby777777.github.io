@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Abigail O'Neill</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+    <link rel="icon" href="treeeee.png" type="image/png" />
+    <link rel="shortcut icon" href="treeeee.png" type="image/png" />
+
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+  <body id="body">
+    <div id="main">
+      <div id="intro">
+        <div id="intro-text">
+          <h1>Abigail O'Neill</h1>
+          <p>
+            👋! I'm an incoming Computer Science PhD student in <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a> where I'm broadly interested in include machine learning architectures for embodied AI and large-scale systems, as well as their improvement and domain-specific impact analysis.
+          </p>
+
+          <div id="quote-tree" style="display: none; margin-top: 1em;">
+            <p><em>“All flourishing is mutual.”</em><br>— Robin Wall Kimmerer, <i>Braiding Sweetgrass</i></p>
+          </div>
+
+          <div id="quote-research" style="display: none; margin-top: 1em;">
+            <p><em>Wishing you a wonderful day!</em></p>
+          </div>
+
+          <br>
+          <a href="#" onclick="window.open('about:blank').document.write('<h1 style=\'font-family:sans-serif;text-align:center;margin-top:20%\'>LinkedIn currently unavailable, but feel free to reach out for more details on my professional background.</h1>'); return false;" aria-label="LinkedIn">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          <a href="#" onclick="window.open('about:blank').document.write('<h1 style=\'font-family:sans-serif;text-align:center;margin-top:20%\'>I have a tab that lists some research projects -- feel free to reach out if you're interested in learning more! </h1>'); return false;" aria-label="Google Scholar">
+            <i class="fas fa-graduation-cap fa-lg"></i>
+          </a>&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          <a href="#" onclick="window.open('about:blank').document.write('<h1 style=\'font-family:sans-serif;text-align:center;margin-top:20%\'>Looking for specific code? Most of it is privately hosted in my repo, so please reach out by email. </h1>'); return false;" aria-label="GitHub">
+            <i class="fab fa-github fa-lg"></i>
+          </a>&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          <a href="#" onclick="window.open('about:blank').document.write('<h1 style=\'font-family:sans-serif;text-align:center;margin-top:20%\'> Mostly just a Twitter observer—shoot me an email if you want to find a time to chat!</h1>'); return false;" aria-label="Twitter">
+            <i class="fab fa-x-twitter fa-lg"></i>
+          </a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <a href="javascript:toggleTree()" aria-label="Toggle Tree Quote">🌱</a>
+          <a href="javascript:toggleResearch()" aria-label="Toggle Research Quote">💭</a>
+
+          <br><br>
+          abbyoneill at berkeley dot edu
+          <br><br>
+        </div>
+        <div id="intro-image">
+          <img src="images/profile_abby.jpg" alt="Profile photo of Abby">
+        </div>
+      </div>
+
+      <!-- Filter buttons -->
+      <div id="filters" class="button-group">
+        <button class="button is-checked" data-filter=".highlight">highlights</button>
+        <button class="button" data-filter=".publication">research</button>
+        <button class="button" data-filter=".misc">more</button>
+      </div>
+
+      <!-- Grid container for items -->
+      <div class="grid">
+        <!-- Highlights -->
+        <div class="list-item highlight" data-category="highlight">
+          <b>June 2025</b> — Starting Research Internship at Google DeepMind!
+        </div>
+        <div class="list-item highlight" data-category="highlight">
+          <b>May 2025</b> — Finished Research Internship at Advanced Micro Devices (AMD) Robotics, working on deploying open-source VLAs on Ryzen AI edge devices and <a href="https://github.com/huggingface/lerobot" target="_blank">Hugging Face's LeRobot</a>.
+        </div>
+        <div class="list-item highlight" data-category="highlight">
+          <b>October 2024</b> — <a href="https://www.skirball.org/about/press/2024/skirball-cultural-center-presents-ancient-wisdom-future-ecology-trees-time-and" target="_blank">Skirball Cultural Center presents <i>Ancient Wisdom for a Future Ecology: Trees, Time, and Technology</i></a> opens — assisted with genus classification for the exhibit.
+        </div>
+
+        <!-- Publications -->
+        <!-- Preserved Research Items -->
+        <div class="list-item publication" data-category="publication">
+          <a href="#" class="thumbnail" target="_blank">
+            <img src="images/aied_thumbbb.jpg" alt="AIED 2025 Knowledge Progression thumbnail" />
+          </a>
+          <div class="project-description">
+            <h3>
+              <a href="#" target="_blank">
+                Modeling Student Knowledge Progression in Intelligent Tutoring Interactions
+              </a>
+            </h3>
+            <p>
+              Kanav Mittal*, Abigail O’Neill*, Hanna Schlegel, Gireeja Ranade, and Narges Norouzi<br>
+              <i>26th International Conference on Artificial Intelligence in Education (AIED), 2025</i>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://drive.google.com/file/d/1HKjcs6Dr2eeklsll5xde0R1I4MSeuehe/view" class="thumbnail" target="_blank">
+            <img src="images/tree_cvpr_thumbb.jpg" alt="Tree Genus Classification thumbnail" />
+          </a>
+          <div class="project-description">
+            <h3>
+              <a href="#" target="_blank">
+                Tree Genus Classification from GPS-Registered Aerial Imagery
+              </a>
+            </h3>
+            <p>
+              Sandeep Mukherjee, Abigail O'Neill, Tianshuang Qiu, Shrey Aeron, Tomson Qu, Simeon Adebola, Sara Beery, Jonathan Huang, Ken Goldberg<br>
+              <i>The 11th Workshop on Fine-Grained Classification, CVPR, 2024</i>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://berkeleyautomation.github.io/MANIP/" class="thumbnail" target="_blank">
+            <video autoplay loop muted playsinline width="100%">
+              <source src="images/manip_thumbb.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </a>
+          <div class="project-description">
+            <h3>
+              <a href="https://berkeleyautomation.github.io/MANIP/" target="_blank">
+                MANIP: A Modular Architecture for Integrating Interactive Perception for Robot Manipulation
+              </a>
+            </h3>
+            <p>
+              Justin Yu*, Tara Sadjadpour*, Abigail O’Neill, Mehdi Khfifi, Lawrence Chen, Richard Cheng, Muhammad Zubair, Ashwin Balakrishna, Thomas Kollar, Ken Goldberg<br>
+              <i>IEEE International Conference on Robots and Systems (IROS), 2024</i>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://robotics-transformer-x.github.io/" class="thumbnail" target="_blank">
+            <video autoplay loop muted playsinline width="100%">
+              <source src="images/clipped_openx.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </a>
+          <div class="project-description">
+            <h3>
+              <a href="https://robotics-transformer-x.github.io/" target="_blank">
+                Open X-Embodiment: Robotic Learning Datasets and RT-X Models
+              </a>
+            </h3>
+            <p>
+              Open X Embodiment Collaboration et al.<br>
+              <i>International Conference on Robotics and Automation (ICRA), 2023</i><br>
+              <b>Best Paper Award, IEEE ICRA</b>
+            </p>
+          </div>
+        </div>
+
+        <!-- Misc / More -->
+        <div class="list-item misc" data-category="misc">
+          <p class="date"><b>2024</b></p>Teaching Assistant, <a href="https://ds100.org/fa24/">Data 100</a> for the <a href="https://cdss.berkeley.edu/dsus/student-opportunities/data-scholars">Data Scholars Program</a>
+        </div>
+        <div class="list-item misc" data-category="misc">
+          <p class="date"><b>2023</b></p>Tutor, <a href="https://www.data8.org/fa23/">Data 8: Foundations of Data Science</a>
+        </div>
+        <div class="list-item misc" data-category="misc">
+          <p class="date"></p>Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2023</a>
+        </div>
+        <div class="list-item misc" data-category="misc">
+          <p class="date"><b>2022</b></p>Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2022</a>
+        </div>
+      </div>
+
+      <div id="footer">
+        Inspired by <a href="https://github.com/andyzeng/andyzeng.github.io">Andy Zeng's</a> website.
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      // Isotope setup
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10
+      });
+      $grid.isotope({ filter: '.highlight' });
+      $('#filters').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        $('#filters .button').removeClass('is-checked');
+        $(this).addClass('is-checked');
+      });
+
+      // Quote toggles
+      window.toggleTree = function() {
+        const t = document.getElementById('quote-tree');
+        const r = document.getElementById('quote-rock');
+        const s = document.getElementById('quote-research');
+        if (t.style.display === 'block') t.style.display = 'none';
+        else { t.style.display = 'block'; r.style.display = s.style.display = 'none'; }
+      };
+
+      window.toggleRock = function() {
+        const t = document.getElementById('quote-tree');
+        const r = document.getElementById('quote-rock');
+        const s = document.getElementById('quote-research');
+        if (r.style.display === 'block') r.style.display = 'none';
+        else { r.style.display = 'block'; t.style.display = s.style.display = 'none'; }
+      };
+
+      window.toggleResearch = function() {
+        const t = document.getElementById('quote-tree');
+        const r = document.getElementById('quote-rock');
+        const s = document.getElementById('quote-research');
+        if (s.style.display === 'block') s.style.display = 'none';
+        else { s.style.display = 'block'; t.style.display = r.style.display = 'none'; }
+      };
+    </script>
+  </body>
+</html>
+
+
