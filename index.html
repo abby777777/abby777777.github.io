@@ -7,7 +7,7 @@
     <link rel="icon" href="treeeee.png" type="image/png" />
     <link rel="shortcut icon" href="treeeee.png" type="image/png" />
 
-    <!-- jQuery (still here in case you want other scripts) -->
+    <!-- jQuery (in case needed for other scripts) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -24,30 +22,14 @@
 
     <style>
       html {
-        scroll-behavior: smooth; /* Smooth scroll for anchor links */
+        scroll-behavior: smooth;
       }
 
-      /* Top navigation links */
-      #filters {
-        margin-top: 1em;
-        font-size: 1rem;
-      }
-      #filters a {
-        margin-right: 1.5em;
-        text-decoration: none;
-        color: #000;
-        font-weight: 500;
-      }
-      #filters a:hover {
-        text-decoration: underline;
-      }
-
-      /* Section spacing */
       section {
         margin-top: 2.5em;
       }
 
-      /* Restore grid layout for publications */
+      /* Layout for research entries */
       .list-item {
         display: flex;
         align-items: flex-start;
@@ -61,6 +43,20 @@
       }
       .project-description {
         max-width: 700px;
+      }
+      .project-description h3 {
+        margin: 0 0 0.3em 0;
+      }
+      .project-meta {
+        color: #555;
+        margin: 0;
+        font-size: 0.95em;
+        line-height: 1.4;
+      }
+
+      /* Footer spacing fix */
+      #more {
+        margin-bottom: 3em;
       }
     </style>
   </head>
@@ -94,44 +90,29 @@
         </div>
       </div>
 
-      <!-- Top navigation (plain text links) -->
-      <div id="filters">
-        <a href="#recent">recent</a>
-        <a href="#research">research</a>
-        <a href="#more">more</a>
-      </div>
-
       <!-- RECENT -->
       <section id="recent">
         <h2>Recent</h2>
-        <div class="list-item">
-          <div><b>June 2025</b> — Starting Research Internship at Google DeepMind in Mountain View, CA!</div>
-        </div>
-        <div class="list-item">
-          <div><b>May 2025</b> — Finished Research Internship at Advanced Micro Devices (AMD) Robotics in lovely Longmont, CO 🏔️. Check out our <a href="https://rocm.blogs.amd.com/artificial-intelligence/rocm-lerobot/README.html" target="_blank" rel="noopener noreferrer">blog post</a> on fine-tuning Vision Language Action Models (VLAs) with AMD ROCm and Hugging Face's LeRobot!</div>
-        </div>
-        <div class="list-item">
-          <div><b>October 2024</b> — <a href="https://www.skirball.org/about/press/2024/skirball-cultural-center-presents-ancient-wisdom-future-ecology-trees-time-and" target="_blank">Skirball Cultural Center presents <i>Ancient Wisdom for a Future Ecology: Trees, Time, and Technology</i></a> opens — assisted with genus classification for the exhibit.</div>
-        </div>
+        <div class="list-item"><div><b>June 2025</b> — Starting Research Internship at Google DeepMind in Mountain View, CA!</div></div>
+        <div class="list-item"><div><b>May 2025</b> — Finished Research Internship at Advanced Micro Devices (AMD) Robotics in lovely Longmont, CO 🏔️. Check out our <a href="https://rocm.blogs.amd.com/artificial-intelligence/rocm-lerobot/README.html" target="_blank">blog post</a> on fine-tuning Vision Language Action Models (VLAs) with AMD ROCm and Hugging Face's LeRobot!</div></div>
+        <div class="list-item"><div><b>October 2024</b> — <a href="https://www.skirball.org/about/press/2024/skirball-cultural-center-presents-ancient-wisdom-future-ecology-trees-time-and" target="_blank">Skirball Cultural Center presents <i>Ancient Wisdom for a Future Ecology: Trees, Time, and Technology</i></a> opens — assisted with genus classification for the exhibit.</div></div>
       </section>
 
       <!-- RESEARCH -->
       <section id="research">
         <h2>Research</h2>
+
         <div class="list-item">
           <a href="https://link.springer.com/chapter/10.1007/978-3-031-98417-4_8" target="_blank">
             <img src="images/aied_thumbbb.jpg" alt="AIED 2025 Knowledge Progression thumbnail" />
           </a>
           <div class="project-description">
-            <h3>
-              <a href="https://link.springer.com/chapter/10.1007/978-3-031-98417-4_8" target="_blank">
-                Modeling Student Knowledge Progression in Intelligent Tutoring Interactions
-              </a>
-            </h3>
-            <p>
+            <h3><a href="https://link.springer.com/chapter/10.1007/978-3-031-98417-4_8" target="_blank">Modeling Student Knowledge Progression in Intelligent Tutoring Interactions</a></h3>
+            <p class="project-meta">
               Kanav Mittal*, Abigail O'Neill*, Hanna Schlegel, Gireeja Ranade, and Narges Norouzi<br>
               <i>26th International Conference on Artificial Intelligence in Education (AIED), 2025</i><br>
-              <i><small>(* denotes equal contribution; alphabetical order)</small></i>
+              <i>(* denotes equal contribution; alphabetical order)</i><br>
+              <b>Nominated for Best Paper Award</b>
             </p>
           </div>
         </div>
@@ -141,12 +122,8 @@
             <img src="images/tree_cvpr_thumbb.jpg" alt="Tree Genus Classification thumbnail" />
           </a>
           <div class="project-description">
-            <h3>
-              <a href="https://sites.google.com/view/fgvc11" target="_blank">
-                Tree Genus Classification from GPS-Registered Aerial Imagery
-              </a>
-            </h3>
-            <p>
+            <h3><a href="https://sites.google.com/view/fgvc11" target="_blank">Tree Genus Classification from GPS-Registered Aerial Imagery</a></h3>
+            <p class="project-meta">
               Sandeep Mukherjee, Abigail O'Neill, Tianshuang Qiu, Shrey Aeron, Tomson Qu, Simeon Adebola, Sara Beery, Jonathan Huang, Ken Goldberg<br>
               <i>The 11th Workshop on Fine-Grained Classification, CVPR, 2024</i>
             </p>
@@ -160,12 +137,8 @@
             </video>
           </a>
           <div class="project-description">
-            <h3>
-              <a href="https://berkeleyautomation.github.io/MANIP/" target="_blank">
-                MANIP: A Modular Architecture for Integrating Interactive Perception for Robot Manipulation
-              </a>
-            </h3>
-            <p>
+            <h3><a href="https://berkeleyautomation.github.io/MANIP/" target="_blank">MANIP: A Modular Architecture for Integrating Interactive Perception for Robot Manipulation</a></h3>
+            <p class="project-meta">
               Justin Yu*, Tara Sadjadpour*, Abigail O’Neill, Mehdi Khfifi, Lawrence Chen, Richard Cheng, Muhammad Zubair, Ashwin Balakrishna, Thomas Kollar, Ken Goldberg<br>
               <i>IEEE International Conference on Robots and Systems (IROS), 2024</i>
             </p>
@@ -179,12 +152,8 @@
             </video>
           </a>
           <div class="project-description">
-            <h3>
-              <a href="https://robotics-transformer-x.github.io/" target="_blank">
-                Open X-Embodiment: Robotic Learning Datasets and RT-X Models
-              </a>
-            </h3>
-            <p>
+            <h3><a href="https://robotics-transformer-x.github.io/" target="_blank">Open X-Embodiment: Robotic Learning Datasets and RT-X Models</a></h3>
+            <p class="project-meta">
               Open X Embodiment Collaboration et al.<br>
               <i>International Conference on Robotics and Automation (ICRA), 2023</i><br>
               <b>Best Paper Award</b>
@@ -196,18 +165,10 @@
       <!-- MORE -->
       <section id="more">
         <h2>More</h2>
-        <div class="list-item">
-          <div><p class="date"><b>2024</b></p>Teaching Assistant, <a href="https://ds100.org/fa24/">Data 100</a> for the <a href="https://cdss.berkeley.edu/dsus/student-opportunities/data-scholars">Data Scholars Program</a></div>
-        </div>
-        <div class="list-item">
-          <div><p class="date"><b>2023</b></p>Tutor, <a href="https://www.data8.org/fa23/">Data 8: Foundations of Data Science</a></div>
-        </div>
-        <div class="list-item">
-          <div><p class="date"></p>Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2023</a></div>
-        </div>
-        <div class="list-item">
-          <div><p class="date"><b>2022</b></p>Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2022</a></div>
-        </div>
+        <div class="list-item"><div><b>2024</b> — Teaching Assistant, <a href="https://ds100.org/fa24/">Data 100</a> for the <a href="https://cdss.berkeley.edu/dsus/student-opportunities/data-scholars">Data Scholars Program</a></div></div>
+        <div class="list-item"><div><b>2023</b> — Tutor, <a href="https://www.data8.org/fa23/">Data 8: Foundations of Data Science</a></div></div>
+        <div class="list-item"><div>Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2023</a></div></div>
+        <div class="list-item"><div><b>2022</b> — Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2022</a></div></div>
       </section>
 
       <div id="footer">
@@ -223,7 +184,6 @@
         t.style.display = (t.style.display === 'block') ? 'none' : 'block';
         if (t.style.display === 'block') s.style.display = 'none';
       };
-
       window.toggleResearch = function() {
         const t = document.getElementById('quote-tree');
         const s = document.getElementById('quote-research');
@@ -233,6 +193,7 @@
     </script>
   </body>
 </html>
+
 
 
 
