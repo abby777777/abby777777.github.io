@@ -300,18 +300,28 @@ h3 a:hover {
 
 #footer {
   color: #a0a8b0;           /* light gray text */
-  position: absolute;
-  bottom: 0;
-  line-height: 1em;        /* tighter lines */
-  font-size: 0.8em;        /* smaller text */
-  padding: 0.5em 0;        /* a bit of vertical breathing room */
+  position: static;         /* no more absolute positioning */
+  line-height: 1em;
+  font-size: 0.8em;
+  padding: 1em 0;
+  margin-top: 3em;          /* space from content above */
+  text-align: center;       /* center align for balance */
 }
 
-#footer a {
-  color: #6e6e6e;          /* brown links (SaddleBrown) */
-  text-decoration: none;
+/* Make nav menu items like plain text links */
+#menu {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 2em;
 }
 
-#footer a:hover {
-  border-bottom: 1px solid #8B4513;
+#menu a {
+  color: #a0a8b0;
+  font-size: 1.6em;
+  line-height: 2.4em;
+}
+
+#menu a:hover {
+  color: #150c21;
+  border-bottom: none;
 }
