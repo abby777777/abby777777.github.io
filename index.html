@@ -62,13 +62,18 @@
         text-align: left;
       }
 
-      /* Indent sub-roles under a year */
-      .sub-role {
-        margin-left: 2.5em;
+      /* Timeline alignment for More section */
+      .timeline-entry {
+        display: grid;
+        grid-template-columns: 80px auto;
+        margin-bottom: 0.5em;
       }
-
-      #more {
-        margin-bottom: 3em;
+      .timeline-year {
+        font-weight: bold;
+        color: #777;
+      }
+      .timeline-role {
+        margin: 0;
       }
     </style>
   </head>
@@ -177,10 +182,22 @@
       <!-- MORE -->
       <section id="more">
         <h2>More</h2>
-        <div class="list-item"><div><b>2024</b> — Teaching Assistant, <a href="https://ds100.org/fa24/">Data 100</a> for the <a href="https://cdss.berkeley.edu/dsus/student-opportunities/data-scholars">Data Scholars Program</a></div></div>
-        <div class="list-item"><div><b>2023</b> — Tutor, <a href="https://www.data8.org/fa23/">Data 8: Foundations of Data Science</a></div></div>
-        <div class="list-item sub-role"><div>Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2023</a></div></div>
-        <div class="list-item"><div><b>2022</b> — Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2022</a></div></div>
+        <div class="timeline-entry">
+          <span class="timeline-year">2024</span>
+          <span class="timeline-role">Teaching Assistant, <a href="https://ds100.org/fa24/">Data 100</a> for the <a href="https://cdss.berkeley.edu/dsus/student-opportunities/data-scholars">Data Scholars Program</a></span>
+        </div>
+        <div class="timeline-entry">
+          <span class="timeline-year">2023</span>
+          <span class="timeline-role">Tutor, <a href="https://www.data8.org/fa23/">Data 8: Foundations of Data Science</a></span>
+        </div>
+        <div class="timeline-entry">
+          <span class="timeline-year"></span>
+          <span class="timeline-role">Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2023</a></span>
+        </div>
+        <div class="timeline-entry">
+          <span class="timeline-year">2022</span>
+          <span class="timeline-role">Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2022</a></span>
+        </div>
       </section>
 
       <div id="footer">
