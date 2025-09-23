@@ -98,16 +98,17 @@ h1 {
 }
 
 #intro-image {
+  width: 25em;          
+  height: auto;        
   margin: 2em 0 0 2em;
-  width: 25em;
-  height: 25em;
-  float: left;
   overflow: hidden;
-  border-radius: 3em;
+  border-radius: 1em;  
 }
 
 #intro-image img {
-  width: 25em;
+  width: 100%;         
+  height: auto;         
+  display: block;      
 }
 
 /**************************************************/
