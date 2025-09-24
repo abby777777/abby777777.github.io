@@ -91,12 +91,12 @@
             <p><em>“All flourishing is mutual.”</em><br>— Robin Wall Kimmerer, <i>Braiding Sweetgrass</i></p>
           </div>
 
-          <div id="quote-research" style="display: none; margin-top: 1em;">
-            <p><em>Wishing you a wonderful day!</em></p>
+          <div id="quote-sun" style="display: none; margin-top: 1em;">
+            <p><em>What does it mean to hold what can’t be contained?</em></p>
           </div>
 
           <a href="javascript:toggleTree()" aria-label="Toggle Tree Quote">🌱</a>
-          <a href="javascript:toggleResearch()" aria-label="Toggle Research Quote">💭</a>
+          <a href="javascript:toggleResearch()" aria-label="Toggle Sun Quote">☀️</a>
 
           <br><br>
           abbyoneill at berkeley dot edu
@@ -222,13 +222,13 @@
     <script>
       window.toggleTree = function() {
         const t = document.getElementById('quote-tree');
-        const s = document.getElementById('quote-research');
+        const s = document.getElementById('quote-sun');
         t.style.display = (t.style.display === 'block') ? 'none' : 'block';
         if (t.style.display === 'block') s.style.display = 'none';
       };
       window.toggleResearch = function() {
         const t = document.getElementById('quote-tree');
-        const s = document.getElementById('quote-research');
+        const s = document.getElementById('quote-sun');
         s.style.display = (s.style.display === 'block') ? 'none' : 'block';
         if (s.style.display === 'block') t.style.display = 'none';
       };
