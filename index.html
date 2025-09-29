@@ -3,7 +3,7 @@
   <head>
     <title>Abby O'Neill</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=990">
+    <meta name="viewport" content="width=990" />
     <link rel="icon" href="new_logo2.png" type="image/png" />
     <link rel="shortcut icon" href="new_logo2.png" type="image/png" />
 
@@ -12,13 +12,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
     <!-- Custom Style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <style>
       html {
@@ -80,58 +86,136 @@
 
   <body id="body">
     <div id="main">
-      <div id="intro">
-        <div id="intro-text">
+      <!-- Intro -->
+      <div
+        id="intro"
+        style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:20px;"
+      >
+        <!-- Left: Text -->
+        <div id="intro-text" style="flex:1; min-width:250px;">
           <h1>Abigail O'Neill</h1>
           <p>
-            👋! I'm a first-year Computer Science PhD student in <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a>.
+            👋! I'm a first-year Computer Science PhD student in
+            <a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a>.
           </p>
-          <br><br>
+          <br /><br />
           abbyoneill at berkeley dot edu
-          <br><br>
+          <br /><br />
 
-        <div style="font-size:1.3em; margin-top:0.5em;">
-            <a href="https://scholar.google.com/citations?user=pWIWyBoAAAAJ&hl=en" target="_blank" aria-label="Google Scholar" style="margin-right:10px; color:#333;">
+          <!-- Social icons -->
+          <div style="font-size:1.3em; margin-top:0.5em;">
+            <a
+              href="https://scholar.google.com/citations?user=pWIWyBoAAAAJ&hl=en"
+              target="_blank"
+              aria-label="Google Scholar"
+              style="margin-right:10px; color:#333;"
+            >
               <i class="fa-solid fa-graduation-cap"></i>
             </a>
-            <a href="https://www.linkedin.com/in/abby-oneill" target="_blank" aria-label="LinkedIn" style="color:#0077b5;">
+            <a
+              href="https://www.linkedin.com/in/abby-oneill"
+              target="_blank"
+              aria-label="LinkedIn"
+              style="color:#0077b5;"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
           </div>
         </div>
-        </div>
-        <div id="intro-image">
-          <img src="images/IMG_0440.png" alt="Profile photo of Abby">
-          <div id="quote-sun" style="display: none; margin-top: 0.5em; text-align: center; font-size: 0.9em; color: #555;">
+
+        <!-- Right: Image + Quote -->
+        <div id="intro-image" style="flex:0 0 auto; text-align:center;">
+          <img
+            src="images/IMG_0440.png"
+            alt="Profile photo of Abby"
+            style="max-width:200px; border-radius:6px;"
+          />
+          <div
+            id="quote-sun"
+            style="display: none; margin-top: 0.5em; text-align: center; font-size: 0.9em; color: #555;"
+          >
             <p><em>What does it mean to hold what only exists in passing?</em></p>
           </div>
-          <a href="javascript:toggleResearch()" aria-label="Toggle Sun Quote" style="display: block; text-align: center; margin-top: 0.3em;">☀️</a>
+          <a
+            href="javascript:toggleResearch()"
+            aria-label="Toggle Sun Quote"
+            style="display: block; text-align: center; margin-top: 0.3em;"
+          >
+            ☀️
+          </a>
         </div>
       </div>
 
-      <!-- RECENT -->
+      <!-- Recent -->
       <section id="recent">
         <h2>Recent</h2>
-        <div class="list-item"><div><b>August 2025</b> — Starting PhD Program! ༄.° </div></div>
-        <div class="list-item"><div><b>August 2025</b> — Finished Research Internship at Google DeepMind in Mountain View, CA working on Gemini's multi-turn long-context evaluation!</div></div>
-        <div class="list-item"><div><b>May 2025</b> — Finished Research Internship at Advanced Micro Devices (AMD) Robotics in lovely Longmont, CO 🏔️. Check out our <a href="https://rocm.blogs.amd.com/artificial-intelligence/rocm-lerobot/README.html" target="_blank">blog post</a> on fine-tuning Vision Language Action Models (VLAs) with AMD ROCm and Hugging Face's LeRobot!</div></div>
-        <div class="list-item"><div><b>October 2024</b> — <a href="https://www.skirball.org/about/press/2024/skirball-cultural-center-presents-ancient-wisdom-future-ecology-trees-time-and" target="_blank">Skirball Cultural Center presents <i>Ancient Wisdom for a Future Ecology: Trees, Time, and Technology</i></a> opens — assisted with genus classification for the exhibit.</div></div>
+        <div class="list-item">
+          <div><b>August 2025</b> — Starting PhD Program! ༄.° </div>
+        </div>
+        <div class="list-item">
+          <div>
+            <b>August 2025</b> — Finished Research Internship at Google DeepMind in
+            Mountain View, CA working on Gemini's multi-turn long-context evaluation!
+          </div>
+        </div>
+        <div class="list-item">
+          <div>
+            <b>May 2025</b> — Finished Research Internship at Advanced Micro Devices
+            (AMD) Robotics in lovely Longmont, CO 🏔️. Check out our
+            <a
+              href="https://rocm.blogs.amd.com/artificial-intelligence/rocm-lerobot/README.html"
+              target="_blank"
+              >blog post</a
+            >
+            on fine-tuning Vision Language Action Models (VLAs) with AMD ROCm and Hugging
+            Face's LeRobot!
+          </div>
+        </div>
+        <div class="list-item">
+          <div>
+            <b>October 2024</b> —
+            <a
+              href="https://www.skirball.org/about/press/2024/skirball-cultural-center-presents-ancient-wisdom-future-ecology-trees-time-and"
+              target="_blank"
+              >Skirball Cultural Center presents
+              <i>Ancient Wisdom for a Future Ecology: Trees, Time, and Technology</i></a
+            >
+            opens — assisted with genus classification for the exhibit.
+          </div>
+        </div>
       </section>
 
-      <!-- RESEARCH -->
+      <!-- Research -->
       <section id="research">
         <h2>Research</h2>
 
         <div class="list-item">
-          <a href="https://link.springer.com/chapter/10.1007/978-3-031-98417-4_8" target="_blank">
-            <img src="images/aied_thumbbb.jpg" alt="AIED 2025 Knowledge Progression thumbnail" />
+          <a
+            href="https://link.springer.com/chapter/10.1007/978-3-031-98417-4_8"
+            target="_blank"
+          >
+            <img
+              src="images/aied_thumbbb.jpg"
+              alt="AIED 2025 Knowledge Progression thumbnail"
+            />
           </a>
           <div class="project-description">
-            <h3><a href="https://link.springer.com/chapter/10.1007/978-3-031-98417-4_8" target="_blank">Modeling Student Knowledge Progression Across Concepts in Intelligent Tutoring Interactions</a></h3>
+            <h3>
+              <a
+                href="https://link.springer.com/chapter/10.1007/978-3-031-98417-4_8"
+                target="_blank"
+                >Modeling Student Knowledge Progression Across Concepts in Intelligent
+                Tutoring Interactions</a
+              >
+            </h3>
             <p class="project-meta">
-              Kanav Mittal*, Abigail O'Neill*, Hanna Schlegel, Gireeja Ranade, and Narges Norouzi<br>
-              <i>26th International Conference on Artificial Intelligence in Education (AIED), 2025</i><br>
-              <i>(* denotes equal contribution; alphabetical order)</i><br>
+              Kanav Mittal*, Abigail O'Neill*, Hanna Schlegel, Gireeja Ranade, and Narges
+              Norouzi<br />
+              <i
+                >26th International Conference on Artificial Intelligence in Education
+                (AIED), 2025</i
+              ><br />
+              <i>(* denotes equal contribution; alphabetical order)</i><br />
               <b>Nominated for Best Paper Award</b>
             </p>
           </div>
@@ -139,12 +223,20 @@
 
         <div class="list-item">
           <a href="https://sites.google.com/view/fgvc11" target="_blank">
-            <img src="images/tree_cvpr.jpg" alt="Tree Genus Classification thumbnail" />
+            <img
+              src="images/tree_cvpr.jpg"
+              alt="Tree Genus Classification thumbnail"
+            />
           </a>
           <div class="project-description">
-            <h3><a href="https://sites.google.com/view/fgvc11" target="_blank">Tree Genus Classification from GPS-Registered Aerial Imagery</a></h3>
+            <h3>
+              <a href="https://sites.google.com/view/fgvc11" target="_blank"
+                >Tree Genus Classification from GPS-Registered Aerial Imagery</a
+              >
+            </h3>
             <p class="project-meta">
-              Sandeep Mukherjee, Abigail O'Neill, Tianshuang Qiu, Shrey Aeron, Tomson Qu, Simeon Adebola, Sara Beery, Jonathan Huang, Ken Goldberg<br>
+              Sandeep Mukherjee, Abigail O'Neill, Tianshuang Qiu, Shrey Aeron, Tomson Qu,
+              Simeon Adebola, Sara Beery, Jonathan Huang, Ken Goldberg<br />
               <i>The 11th Workshop on Fine-Grained Visual Classification, CVPR, 2024</i>
             </p>
           </div>
@@ -157,11 +249,18 @@
             </video>
           </a>
           <div class="project-description">
-            <h3><a href="https://berkeleyautomation.github.io/MANIP/" target="_blank">MANIP: A Modular Architecture for Integrating Interactive Perception for Robot Manipulation</a></h3>
+            <h3>
+              <a href="https://berkeleyautomation.github.io/MANIP/" target="_blank"
+                >MANIP: A Modular Architecture for Integrating Interactive Perception for
+                Robot Manipulation</a
+              >
+            </h3>
             <p class="project-meta">
-              Justin Yu*, Tara Sadjadpour*, Abigail O’Neill, Mehdi Khfifi, Lawrence Chen, Richard Cheng, Muhammad Zubair, Ashwin Balakrishna, Thomas Kollar, Ken Goldberg<br>
-              <i>IEEE International Conference on Robots and Systems (IROS), 2024</i>
-              <i>(* denotes equal contribution)</i><br>
+              Justin Yu*, Tara Sadjadpour*, Abigail O’Neill, Mehdi Khfifi, Lawrence Chen,
+              Richard Cheng, Muhammad Zubair, Ashwin Balakrishna, Thomas Kollar, Ken
+              Goldberg<br />
+              <i>IEEE International Conference on Robots and Systems (IROS), 2024</i><br />
+              <i>(* denotes equal contribution)</i>
             </p>
           </div>
         </div>
@@ -173,66 +272,93 @@
             </video>
           </a>
           <div class="project-description">
-            <h3><a href="https://robotics-transformer-x.github.io/" target="_blank">Open X-Embodiment: Robotic Learning Datasets and RT-X Models</a></h3>
+            <h3>
+              <a href="https://robotics-transformer-x.github.io/" target="_blank"
+                >Open X-Embodiment: Robotic Learning Datasets and RT-X Models</a
+              >
+            </h3>
             <p class="project-meta">
-              Open X Embodiment Collaboration et al.<br>
-              <i>International Conference on Robotics and Automation (ICRA), 2023</i><br>
+              Open X Embodiment Collaboration et al.<br />
+              <i>International Conference on Robotics and Automation (ICRA), 2023</i><br />
               <b>Best Paper Award</b>
             </p>
           </div>
         </div>
       </section>
 
-      <!-- MORE -->
+      <!-- Teaching and Outreach -->
       <section id="more">
         <h2>Teaching and Outreach</h2>
         <div class="timeline-entry">
           <span class="timeline-year">2025</span>
           <span class="timeline-role">
-  Data Science and AI Fellow at the 
-  <a href="https://dlab.berkeley.edu/about/people/data-science-ai-fellows" target="_blank">DLAB</a>. 
-  If you are a Berkeley student, check out 
-  <a href="https://dlab.my.salesforce-sites.com/events?_gl=1*1myn7k4*_ga*MTIzNjMyMzI3Ni4xNzIxNjc5MTI1*_ga_4FP3KBY1V9*czE3NTg3MzQ1NzMkbzIkZzEkdDE3NTg3MzQ1ODQkajQ5JGwwJGgw" target="_blank">
-    upcoming workshops!
-  </a>
-</span>
+            Data Science and AI Fellow at the
+            <a
+              href="https://dlab.berkeley.edu/about/people/data-science-ai-fellows"
+              target="_blank"
+              >DLAB</a
+            >. If you are a Berkeley student, check out
+            <a
+              href="https://dlab.my.salesforce-sites.com/events?_gl=1*1myn7k4*_ga*MTIzNjMyMzI3Ni4xNzIxNjc5MTI1*_ga_4FP3KBY1V9*czE3NTg3MzQ1NzMkbzIkZzEkdDE3NTg3MzQ1ODQkajQ5JGwwJGgw"
+              target="_blank"
+              >upcoming workshops!</a
+            >
+          </span>
         </div>
         <div class="timeline-entry">
           <span class="timeline-year">2024</span>
-          <span class="timeline-role">Teaching Assistant, <a href="https://ds100.org/fa24/">Data 100</a> for the <a href="https://cdss.berkeley.edu/dsus/student-opportunities/data-scholars">Data Scholars Program</a></span>
+          <span class="timeline-role"
+            >Teaching Assistant,
+            <a href="https://ds100.org/fa24/">Data 100</a> for the
+            <a
+              href="https://cdss.berkeley.edu/dsus/student-opportunities/data-scholars"
+              >Data Scholars Program</a
+            ></span
+          >
         </div>
         <div class="timeline-entry">
           <span class="timeline-year">2023</span>
-          <span class="timeline-role">Tutor, <a href="https://www.data8.org/fa23/">Data 8: Foundations of Data Science</a></span>
+          <span class="timeline-role"
+            >Tutor, <a href="https://www.data8.org/fa23/">Data 8: Foundations of Data
+            Science</a></span
+          >
         </div>
         <div class="timeline-entry">
           <span class="timeline-year"></span>
-          <span class="timeline-role">Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2023</a></span>
+          <span class="timeline-role"
+            >Lead Director,
+            <a href="https://www.cskickstart.com/">CS Kickstart 2023</a></span
+          >
         </div>
         <div class="timeline-entry">
           <span class="timeline-year">2022</span>
-          <span class="timeline-role">Lead Director, <a href="https://www.cskickstart.com/">CS Kickstart 2022</a></span>
+          <span class="timeline-role"
+            >Lead Director,
+            <a href="https://www.cskickstart.com/">CS Kickstart 2022</a></span
+          >
         </div>
       </section>
 
+      <!-- Footer -->
       <div id="footer">
-        Inspired by <a href="https://github.com/andyzeng/andyzeng.github.io">Andy Zeng's</a> website.
+        Inspired by
+        <a href="https://github.com/andyzeng/andyzeng.github.io">Andy Zeng's</a> website.
       </div>
     </div>
 
     <!-- Quote toggles -->
     <script>
-      window.toggleTree = function() {
-        const t = document.getElementById('quote-tree');
-        const s = document.getElementById('quote-sun');
-        t.style.display = (t.style.display === 'block') ? 'none' : 'block';
-        if (t.style.display === 'block') s.style.display = 'none';
+      window.toggleTree = function () {
+        const t = document.getElementById("quote-tree");
+        const s = document.getElementById("quote-sun");
+        t.style.display = t.style.display === "block" ? "none" : "block";
+        if (t.style.display === "block") s.style.display = "none";
       };
-      window.toggleResearch = function() {
-        const t = document.getElementById('quote-tree');
-        const s = document.getElementById('quote-sun');
-        s.style.display = (s.style.display === 'block') ? 'none' : 'block';
-        if (s.style.display === 'block') t.style.display = 'none';
+      window.toggleResearch = function () {
+        const t = document.getElementById("quote-tree");
+        const s = document.getElementById("quote-sun");
+        s.style.display = s.style.display === "block" ? "none" : "block";
+        if (s.style.display === "block") t.style.display = "none";
       };
     </script>
   </body>
